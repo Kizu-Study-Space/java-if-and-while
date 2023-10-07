@@ -15,6 +15,9 @@ public class PointTest {
 
     point = new Point(-1,-1);
     assertEquals(3, point.getQuadrant());
+
+    point = new Point(1,-1);
+    assertEquals(4, point.getQuadrant());
   }
    
 }

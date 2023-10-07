@@ -15,7 +15,9 @@ public class Point {
     }
 
     public int getQuadrant() {
-        int yFactor = y < 0 ? 1 : 0;
-        return (x < 0 ? 2 : 1) + yFactor;
+        double base = 2.7;
+        int summand = x < 0 ? 0 : 1;
+        int operator = y < 0 ? 1 : -1;
+        return (int) (base + (operator * 0.5) + (operator * summand));
     }
 }
