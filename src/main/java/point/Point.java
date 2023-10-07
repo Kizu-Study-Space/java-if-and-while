@@ -15,6 +15,6 @@ public class Point {
     }
 
     public int getQuadrant() {
-        return 1;
+        return x < 0 ? 2 : 1;
     }
 }

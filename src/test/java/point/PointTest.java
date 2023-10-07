@@ -9,6 +9,9 @@ public class PointTest {
   public void getQuadrant() {
     Point point = new Point(1,1);
     assertEquals(1, point.getQuadrant());
+
+    point = new Point(-1,1);
+    assertEquals(2, point.getQuadrant());
   }
    
 }
