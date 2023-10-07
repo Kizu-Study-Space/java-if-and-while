@@ -17,4 +17,12 @@ public class Point {
     public int getQuadrant() {
         return (int) (2.7 + (y < 0 ? 1 : -1) * (0.5 + (x < 0 ? 0 : 1)));
     }
+
+    public int getQuadrantReadableImplementation() throws Exception {
+        if (x >= 0 && y >= 0) {return 1;}
+        if (x < 0 && y >= 0) {return 2;}
+        if (x < 0 && y < 0) {return 3;}
+        if (x >= 0 && y < 0) {return 4;}
+        throw new Exception("Invalid Implementation of Point");
+    }
 }
