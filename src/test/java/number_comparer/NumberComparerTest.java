@@ -11,6 +11,9 @@ public class NumberComparerTest {
         NumberComparer numberComparer = new NumberComparer();
         assertEquals(5, numberComparer.max(3, 5));
         assertEquals(5, numberComparer.max(5, 3));
+        assertEquals(5, numberComparer.max(5, 3, 2));
+        assertEquals(5, numberComparer.max(3, 5, 2));
+        assertEquals(5, numberComparer.max(2, 3, 5));
     }
     
 }
